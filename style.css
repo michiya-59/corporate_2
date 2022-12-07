@@ -3,6 +3,30 @@ body{
   font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
 }
 
+header{
+  position: sticky;
+  z-index: 999;
+  width: 100%;
+  background-color: #fff;
+  top: 0;
+}
+
+main{
+  width: 66%;
+}
+
+aside{
+  width: 33%;
+}
+
+#container{
+  margin: 0 auto;
+  padding: 0px 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ヘッダー */
 .site_title{
   width: 1200px;
   margin: 0 auto;
@@ -25,4 +49,133 @@ body{
 #navigation ul li{
   font-size: 14px;
   margin-right: 60px;
+}
+
+/* コンテンツ */
+
+.article_top{
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 42px 16px;
+}
+
+.article_top article{
+  width: 32%;
+}
+
+.article_top article img{
+  width: 100%;
+}
+
+.article_top article p{
+  margin-top: 12px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.article_top article a{
+  position: relative; /*疑似要素使用のため*/
+  text-decoration: none; /*標準時の下線を削除*/
+  display: block;
+  width: 22%;
+  margin: 0 auto;
+}
+
+.article_top article a::after{
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 98%;
+  height: 1px;
+  background-color: #333333;
+  opacity: 1;
+  visibility: visible;
+  transition: .3s;
+}
+
+.article_top article a:hover::after{
+  visibility: hidden;
+  opacity: 0;
+  bottom: -4px; /*4px下まで移動*/
+  transition: .3s;
+}
+
+.article_top article a p{
+  font-weight: normal;
+  font-size: 14px;
+  width: 100%;
+}
+
+
+#container main article{
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  padding: 32.5px 16px;
+}
+
+#container main article .article_title{
+  margin-bottom: 13px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+#container main article ul{
+  display: flex;
+  margin-bottom: 10px;
+}
+
+#container main article ul li{
+  margin-right: 20px;
+}
+
+#container main article ul li a{
+  font-size: 14px;
+}
+
+.text_link{
+  padding: 13px 41px;
+  text-align: left;
+}
+
+.text_link a p{
+  font-weight: normal;
+  font-size: 14px;
+  width: 100%;
+}
+
+.text_link a::after{
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 98%;
+  height: 1px;
+  background-color: #333333;
+  opacity: 1;
+  visibility: visible;
+  transition: .3s;
+}
+
+.text_link a{
+  position: relative; /*疑似要素使用のため*/
+  text-decoration: none; /*標準時の下線を削除*/
+  display: block;
+  width: 12%;
+  margin: 0 auto;
+}
+
+.text_link a:hover::after{
+  visibility: hidden;
+  opacity: 0;
+  bottom: -4px; /*4px下まで移動*/
+  transition: .3s;
+}
+
+.text_link .text{
+  margin-bottom: 24px;
 }
