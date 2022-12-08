@@ -20,7 +20,7 @@ aside{
 }
 
 #container{
-  margin: 0 auto;
+  margin: 0 auto 140px auto;
   padding: 0px 120px;
   display: flex;
   justify-content: space-between;
@@ -115,7 +115,7 @@ aside{
   justify-content: space-between;
   width: 100%;
   margin: 0 auto;
-  padding: 32.5px 16px;
+  padding: 36.5px 16px;
 }
 
 #container main article .article_title{
@@ -178,4 +178,97 @@ aside{
 
 .text_link .text{
   margin-bottom: 24px;
+}
+
+/* aside */
+/* profile */
+aside{
+  display: flex;
+  flex-direction: column;
+}
+
+aside .profile{
+  padding: 39px 30px 0 10px;
+  text-align: center;
+  margin-bottom: 57px;
+}
+aside .profile img{
+  width: 130px;
+  height: 130px;
+  margin-bottom: 30px;
+  border-radius: 999px;
+}
+
+aside .profile .name{
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 6px 9px 0px 8px;
+}
+
+aside .profile .profile_text{
+  font-size: 14px;
+  text-align: left;
+  padding: 0 4px;
+}
+/* ranking */
+aside .ranking{
+  text-align: center;
+  padding: 3px 35px 0 15px;
+  margin-bottom: 36px;
+}
+
+.ranking_title{
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+aside .ranking article{
+  width: 345px;
+}
+
+aside .ranking article img{
+  height: 194px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+aside .ranking article .ranking_text{
+  font-size: 14px;
+  text-align: left;
+}
+
+aside .ranking > * + *{
+  margin-bottom: 26px;
+}
+
+/* archive */
+.archive{
+  text-align: center;
+}
+
+.archive_title{
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 31px;
+  padding-right: 20px;
+}
+
+.archive ul{
+  padding: 0 35px 0px 15px;
+  font-size: 14px;
+}
+
+.archive ul li:first-child{
+  padding: 20px;
+  border-top: 1px solid #777;
+  border-bottom: 1px solid #777;
+  text-align: left;
+}
+
+.archive ul > * + *{
+  padding: 20px;
+  border-bottom: 1px solid #777;
+  text-align: left;
 }
