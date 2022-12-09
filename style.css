@@ -19,6 +19,13 @@ aside{
   width: 33%;
 }
 
+footer{
+  display: flex;
+}
+
+a:hover{
+  color: #333;
+}
 #container{
   margin: 0 auto 140px auto;
   padding: 0px 120px;
@@ -271,4 +278,89 @@ aside .ranking > * + *{
   padding: 20px;
   border-bottom: 1px solid #777;
   text-align: left;
+}
+
+/* footer */
+#footer{
+  vertical-align: top;
+  background-color: #F7F7F7;
+  height: 510px;
+  padding: 52px 136px 0px 136px;
+  display: block;
+}
+
+.footer_content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.about, .menu, .twitter{
+  font-weight: bold;
+  font-size: 18px;
+  color: #333333;
+  margin-bottom: 34px;
+}
+
+.footer_item{
+  width: 350px;
+  font-size: 14px;
+}
+
+.footer_item .text{
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+.footer_item ul li a{
+  position: relative;
+  padding-left: 12px;
+  margin-bottom: 5px;
+}
+
+.footer_item ul li:first-child{
+  padding-left: 3px;
+  margin-bottom: 3px;
+}
+
+.footer_item ul > * + *{
+  padding-left: 3px;
+  margin-bottom: 3px;
+}
+
+.footer_a::before{
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 0 6px 8px;
+  border-color: transparent transparent transparent #333;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -6px;
+}
+
+.menu_ul li:first-child{
+  border-top: 1px solid #777;
+  border-bottom: 1px solid #777;
+  padding: 14px 0 11px 0;
+  text-align: left;
+}
+
+.menu_ul > * + *{
+  border-bottom: 1px solid #777;
+  padding: 14px 0 11px 0;
+  text-align: left;
+}
+
+.tweet{
+  width: 347px;
+  height: 315px;
+  overflow: scroll;
+}
+
+.copy_right{
+  font-size: 12px;
+  text-align: center;
+  margin-top: 60px;
 }
