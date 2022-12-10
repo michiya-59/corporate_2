@@ -1,0 +1,117 @@
+@media screen and (max-width: 900px) {
+  #header .site_title{
+    display: block;
+    width: 100%;
+    padding: 20px 20px;
+    height: 70px;
+    margin: 0px;
+  }
+
+  #navigation{
+    padding: 10px 16px;
+    overflow: scroll;
+    width: 100%;
+  }
+
+  #navigation ul{
+    padding: 0px;
+  }
+
+  .article_top{
+    flex-direction: column;
+    width: 100%;
+    padding: 29px 16px 0 16px
+  }
+
+  .article_top article{
+    width: 100%;
+  }
+
+  .article_top article p{
+    margin-top: 10px;
+  }
+
+  .article_top article a{
+    width: 24%;
+  }
+
+  .article_top article a p{
+    margin-bottom: 30px;
+  }
+
+  #container{
+    flex-direction: column;
+    padding: 0px 16px;
+    margin: 0 auto 120px auto;
+  }
+
+  #container main{
+    width: 100%;
+  }
+
+  #container main article{
+    padding: 0;
+  }
+
+  .article_title{
+    margin-top: 70px;
+  }
+
+  #container main article .article_title{
+    margin-bottom: 15px;
+  }
+
+  .text_link .text{
+    margin-bottom: 30px;
+  }
+
+  .text_link a{
+    width: 31.5%;
+  }
+
+  #container aside{
+    width: 100%;
+  }
+
+  aside .profilem, aside .profile .profile_text{
+    padding: 0px;
+  }
+
+  aside .profile{
+    padding: 60px 0 0 0;
+  }
+
+  aside .ranking{
+    padding: 0;
+  }
+
+  aside .ranking > * + *{
+    margin-bottom: 30px;
+  }
+
+  .archive ul{
+    padding: 0;
+  }
+
+  #footer{
+    padding: 50px 16px 10px 16px;
+    height: 100%;
+  }
+
+  .footer_content{
+    flex-direction: column;
+  }
+
+  .about, .menu, .twitter{
+    margin-bottom: 30px;
+  }
+
+  .footer_content .footer_item ul{
+    margin-bottom: 50px;
+  }
+
+  .tweet{
+    width: 343px;
+    height: 315px;
+  }
+}
