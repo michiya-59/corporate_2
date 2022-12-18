@@ -8,9 +8,109 @@
   }
 
   #navigation{
-    padding: 10px 16px;
-    overflow: scroll;
+    display: none;
+  }
+
+  #nav_toggle{
+    position: fixed;
+    display: inline-block;
+    top: 10px;
+    right: 16px;
+    opacity: 1;
+    z-index: 1100;
+    height: 50px;
+  }
+
+  #nav_toggle div{
+    position: relative;
+    width: 50px;
+    height: 100%;
+  }
+
+  #nav_toggle div span{
+    position: absolute;
+    display: inline-block;
+    width: 90%;
+    left: 0;
+    height: 1px;
+    background-color: #000;
+    opacity: 1;
+    transition: transform .3s ease-in-out, top .5s ease;
+  }
+
+  #navigation_hanbager{
+    display: none;
+    opacity: 0;
+  }
+
+  #nav_toggle div span:nth-child(1){
+    top: 11px;
+  }
+  #nav_toggle div span:nth-child(2){
+    top: 24px;
+  }
+  #nav_toggle div span:nth-child(3){
+    top: 37px;
+  }
+
+  .active #nav_toggle div span{
+    background-color: white;
+  }
+
+  .active #nav_toggle div span:nth-child(1){
+    top: 26px;
+    transform: rotate(45deg);
+  }
+  .active #nav_toggle div span:nth-child(2){
+    opacity: 0;
+  }
+  .active #nav_toggle div span:nth-child(3){
+    top: 26px;
+    transform: rotate(-45deg);
+  }
+
+  .active #navigation_hanbager{
+    font-size: 19px;
+    display: flex;
+    opacity: 0.97;
+    flex-direction: column;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    z-index: 999;
     width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    transition: opacity .6s ease, visibility .6s ease;
+  }
+
+  .active #navigation_hanbager ul > *{
+    padding: 15px;
+    transform: translateX(0);
+    transition:  transform 1s ease, opacity .9s ease;
+  }
+
+  .active #navigation_hanbager ul > * + *{
+    padding: 15px;
+    transform: translateX(0);
+    transition:  transform 1s ease, opacity .9s ease;
+  }
+
+  .active #navigation_hanbager ul li:nth-child(1){
+    transition-delay: .15s;
+  }
+  .active #navigation_hanbager ul li:nth-child(2){
+    transition-delay: .3s;
+  }
+  .active #navigation_hanbager ul li:nth-child(3){
+    transition-delay: .6s;
+  }
+  .active #navigation_hanbager ul li:nth-child(4){
+    transition-delay: .75s;
+  }
+  .active #navigation_hanbager ul li:nth-child(5){
+    transition-delay: .9s;
   }
 
   #navigation ul{
@@ -21,7 +121,7 @@
   .article_top{
     flex-direction: column;
     width: 100%;
-    padding: 29px 16px 0 16px
+    padding: 0px 16px 0 16px
   }
 
   .article_top article{
@@ -33,7 +133,7 @@
   }
 
   .article_top article a{
-    width: 23%;
+    width: 82px;
   }
 
   .article_top article a p{

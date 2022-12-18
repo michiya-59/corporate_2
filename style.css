@@ -3,9 +3,14 @@ body{
   font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
 }
 
+#navigation_hanbager{
+  display: none;
+  opacity: 0;
+}
+
 header{
   position: sticky;
-  z-index: 999;
+  z-index: 998;
   width: 100%;
   background-color: #fff;
   top: 0;
@@ -56,6 +61,11 @@ a:hover{
 #navigation ul li{
   font-size: 14px;
   margin-right: 60px;
+}
+
+#nav_toggle{
+  display: none;
+  opacity: 0;
 }
 
 /* コンテンツ */
@@ -363,4 +373,22 @@ aside .ranking > * + *{
   font-size: 12px;
   text-align: center;
   margin-top: 60px;
+}
+
+#page_top {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+}
+#page_top a {
+  background-color: #999;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px;
+  font-size: 11px;
+}
+#page_top a:hover {
+  background-color: #666;
+  text-decoration: none;
 }
